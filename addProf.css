@@ -1,4 +1,8 @@
-
+#container{
+    
+    width: 300px;
+    
+}
 .stars {
   unicode-bidi: bidi-override;
   direction: rtl;
@@ -17,23 +21,31 @@ text-align: left;
 }
 
 #rating{
-    height: 200px;
-    width: 250px;
+    height: 250px;
+    width: 300px;
     border: solid;
     margin: 15px;
+    float: left; 
 
 }
 #profInfo{
- margin: 15px;
- border: solid;
- width: 600px;
- height: 150px
-    
+     margin: 15px;
+     border: solid;
+     width: 600px;
+     height: 150px;
+     float: left; 
     
 }
 
 textarea#comment{
-height: 200px;
-width: 400px;
+    height: 200px;
+    width: 400px;
+    float: left;
+    
+}
+#submitP{
+    float: left;  
+    margin-top: 15px;
+    
     
 }

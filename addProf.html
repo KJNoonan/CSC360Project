@@ -6,72 +6,66 @@
 <link rel = "stylesheet" type="text/css" href="addProf.css">
     
 </head>
-<h1>Add a Professor</h1>
-<h3>Please Fill in the Form</h3>
-    <div id="profInfo">
-        <h5>Professor Information: </h5>
-            <label for="fName">First Name: </label>
-            <input type="text" id = "fName"></input>
-            <label for="lName">Last Name: </label>
-            <input type="text" id="lName"></input>
+<div id="container">
+    <h1>Add a Professor</h1>
+
+        <h3>Please Fill in the Form</h3>
+            <div id="profInfo">
+                <h5>Professor Information: </h5>
+                    <label for="fName">First Name: </label>
+                    <input type="text" id = "fName"></input>
+                    <label for="lName">Last Name: </label>
+                    <input type="text" id="lName"></input>
+                    <br>
+                    <br>
+                    <label for="dept">Department: </label>
+                    <select id="dept">
+                        <option value="Computer Science">Computer Science (CSC)</option>
+                        <option value="Digital Cinema">Digital Cinema (DC)</option>
+                        <option value="Software Engineering">Software Engineering (SE)</option>
+
+
+
+                    </select>
+            </div>
             <br>
             <br>
-            <label for="dept">Department: </label>
-            <select id="dept">
-                <option value="Computer Science">Computer Science (CSC)</option>
-                <option value="Digital Cinema">Digital Cinema (DC)</option>
-                <option value="Software Engineering">Software Engineering (SE)</option>
+            <div id = "rating"
+                 <h4>What's Your Rating of this Professor?: </h4>
+            <br>
+                <label for="overall">Overall: </label>
+                <div class="stars" id="overall: ">
+                    <span>&#x2606</span><span>&#x2606</span><span>&#x2606</span><span>&#x2606</span><span>&#x2606</span>
+                </div>
+                <label for="easiness">Easiness: </label>
+                <div class="stars" id="easiness">
+                    <span>&#x2606</span><span>&#x2606</span><span>&#x2606</span><span>&#x2606</span><span>&#x2606</span>
+                </div>
+                 <label for="timeliness">Timeliness: </label>
+                <div class="stars" id="timeliness">
+                    <span>&#x2606</span><span>&#x2606</span><span>&#x2606</span><span>&#x2606</span><span>&#x2606</span>
+                </div>
+                <label for="enthusiasm">Enthusiasm: </label>
+                <div class="stars" id="enthusiasm">
+                    <span>&#x2606</span><span>&#x2606</span><span>&#x2606</span><span>&#x2606</span><span>&#x2606</span>
+                </div>
+                 <label for="communication">Communication: </label>
+                <div class="stars" id="communication">
+                    <span>&#x2606</span><span>&#x2606</span><span>&#x2606</span><span>&#x2606</span><span>&#x2606</span>
+                </div>
+                <label for="checkbox"> Does the Professor Use the Book?: </label>
+                <input type="checkbox" id="useBook">Yes</input>
+        <br>
+        <br>
+        <br>
+                <textarea id="comment">Enter a comment here: (optional)</textarea>
+                <button id="submitP">Submit Professor</button>
+            </div>
 
 
 
-            </select>
-    </div>
-    <br>
-    <br>
-    <div id = "rating"
-         <h4>What's Your Rating of this Professor?: </h4>
-    <br>
-        <label for="overall">Overall: </label>
-        <div class="stars" id="overall: ">
-            <span>&#x2606</span><span>&#x2606</span><span>&#x2606</span><span>&#x2606</span><span>&#x2606</span>
-        </div>
-        <label for="easiness">Easiness: </label>
-        <div class="stars" id="easiness">
-            <span>&#x2606</span><span>&#x2606</span><span>&#x2606</span><span>&#x2606</span><span>&#x2606</span>
-        </div>
-         <label for="timeliness">Timeliness: </label>
-        <div class="stars" id="timeliness">
-            <span>&#x2606</span><span>&#x2606</span><span>&#x2606</span><span>&#x2606</span><span>&#x2606</span>
-        </div>
-        <label for="enthusiasm">Enthusiasm: </label>
-        <div class="stars" id="enthusiasm">
-            <span>&#x2606</span><span>&#x2606</span><span>&#x2606</span><span>&#x2606</span><span>&#x2606</span>
-        </div>
-         <label for="communication">Communication: </label>
-        <div class="stars" id="communication">
-            <span>&#x2606</span><span>&#x2606</span><span>&#x2606</span><span>&#x2606</span><span>&#x2606</span>
-        </div>
-<br>
-<br>
-        <textarea id="comment">Enter a comment here: (optional)</textarea>
-    </div>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
 
-<button id="submitP">Submit Professor</button>
-
+</div>
 
 
 
