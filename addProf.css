@@ -1,0 +1,39 @@
+
+.stars {
+  unicode-bidi: bidi-override;
+  direction: rtl;
+text-align: left;
+}
+.stars > span {
+  display: inline-block;
+  position: relative;
+  width: 1.1em;
+}
+
+.stars > span:hover:before,
+.stars > span:hover ~ span:before {
+   content: "&#x2605";
+   position: absolute;
+}
+
+#rating{
+    height: 200px;
+    width: 250px;
+    border: solid;
+    margin: 15px;
+
+}
+#profInfo{
+ margin: 15px;
+ border: solid;
+ width: 600px;
+ height: 150px
+    
+    
+}
+
+textarea#comment{
+height: 200px;
+width: 400px;
+    
+}
