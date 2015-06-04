@@ -25,7 +25,7 @@ var init = function(){
 		responseTime:5,
 		enthusiasm:5,
 		communication:5,
-		school:"DePaul",
+		school:"DePaul University",
 		usesBook:true,
 		comments:["Overall:5\nEase:5\nResponse Time:5\nEnthusiasm:5\nCommunication:5\nUses Book\nPeter is the coolest professor!"]
 	},
@@ -36,9 +36,21 @@ var init = function(){
 		responseTime:0,
 		enthusiasm:0,
 		communication:0,
-		school:"DePaul",
+		school:"DePaul University",
 		usesBook:true,
 		comments:["Overall:0\nEase:0\nResponse Time:0\nEnthusiasm:0\nCommunication:0\nDoesn't Use Book\nProf McMeowmers is terrible"]
+	},
+	{
+		name:"Craig Miller",
+		overall:5,
+		ease:5,
+		responseTime:5,
+		enthusiasm:5,
+		communication:5,
+		school:"DePaul University",
+		usesBook:true,
+		comments:["Overall:5\nEase:5\nResponse Time:5\nEnthusiasm:5\nCommunication:5\nUses Book\nPeter is the coolest professor!"]
+
 	}
 	];
 

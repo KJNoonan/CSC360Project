@@ -6,8 +6,12 @@ $(function() {
 		$('#result').empty();
 		var name, profs, i;
 		name = $("#teacher").val();
-		
-		profs = profModel.find({name: name.toString()});
+		school = $('#school').val();
+		if(name === null){
+			profs = profModel.find({name: name.toString()});
+		}else{
+			profs = profModel.find({school: school.toString()});
+		}
 
 		//$("#result").html(profs[0].name);
 		var table = $("#result").append("<table></table>");
@@ -26,6 +30,9 @@ $(function() {
 				data.append("<td>"+prof.overall+"</td>");
 			}
 		}
+		$("#teacher").empty();
+		$("#school").empty();
+
 		return false;
 	});
 });
