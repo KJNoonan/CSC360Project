@@ -31,7 +31,7 @@ $(function() {
 			for(i = 0; i < profs.length; i++){
 				var data = table.append("<tr></tr>");
 				var prof = profs[i];
-				data.append("<td>"+prof.name+"</td>");
+				data.append("<td>"+"<a href=\"profPage.html?" + prof.name + "\">"+prof.name+"</a></td>");
 				data.append("<td>"+prof.school+"</td>");
 				data.append("<td>"+prof.overall+"</td>");
 			}
