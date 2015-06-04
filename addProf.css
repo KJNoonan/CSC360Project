@@ -55,3 +55,16 @@ fieldset{
 cursor: pointer;
 color:darkturquoise;
 }
+
+#pi{
+ margin-top: 2px;  
+margin-bottom: 2px;
+    
+}
+
+#addedInfo{
+    
+     border-top: solid;
+    border-bottom: solid;
+    
+}

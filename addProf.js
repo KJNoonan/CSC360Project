@@ -30,7 +30,8 @@ $(function(){
         addedProf.enthusiasm = $("input[name=enthusiasm]:checked").val();
         addedProf.communication = $("input[name=communication]:checked").val();
         addedProf.usesBook = $("input[name=book]:checked").val();
-        localStorage.setItem("addedProf",addedProf);
+        localStorage.setItem("addedProf",(JSON.stringify(addedProf)));
+        console.log(localStorage.getItem("addedProf"));
         window.location.href = "addedConf.html";
     });
     
