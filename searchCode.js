@@ -1,17 +1,22 @@
 $(function() {
 	var profModel;
 	profModel = new Model('prof');
-
+	$("#teacher").change(function(){
+		$("#school").val('');
+	});
+	$("#school").change(function(){
+		$("#teacher").val('');
+	});
 	$("form").submit(function(e){
 		$('#result').empty();
 		var name, profs, i;
 		name = $("#teacher").val();
 		school = $('#school').val();
-		if(name != null){
+
+		if($("#teacher").val()){
 			profs = profModel.find({name: name.toString()});
 		}
-		
-		if(school != null){
+		if($("#school").val()){
 			profs = profModel.find({school: school.toString()});
 		}
 
