@@ -4,34 +4,19 @@
     
     
 }
-.stars {
-  unicode-bidi: bidi-override;
-  direction: rtl;
-text-align: left;
-}
-.stars > span {
-  display: inline-block;
-  position: relative;
-  width: 1.1em;
-}
-
-.stars > span:hover:before,
-.stars > span:hover ~ span:before {
-   content: "/x2605";
-   position: absolute;
-}
-
 #rating{
-    height: 250px;
-    width: 300px;
-    border: solid;
+    height: 365px;
+    width: 450px;
+    border-top: solid;
+    border-bottom: solid;
     margin: 15px;
     float: left; 
 
 }
 #profInfo{
      margin: 15px;
-     border: solid;
+     border-top: solid;
+    border-bottom: solid;
      width: 600px;
      height: 150px;
      float: left; 
@@ -49,4 +34,24 @@ textarea#comment{
     margin-top: 15px;
     
     
+}
+#ratTitle{
+ 
+    
+}
+
+fieldset{
+ text-align: center;   
+
+    
+}
+#cArea{
+ margin-top: 20px;   
+    
+    
+    
+}
+#home{
+cursor: pointer;
+color:darkturquoise;
 }

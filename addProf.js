@@ -23,10 +23,21 @@ $(function(){
         profe.school = uni;
         var dept = $("#dept").val();
         profe.department = dept;
-        profe.comments = $("comment").val();
+        profe.comments = $("#comment").val();
+        profe.overall = $("input[name=overall]:checked").val();
+        profe.ease = $("input[name=easiness]:checked").val();
+        profe.responseTime = $("input[name=timeliness]:checked").val();
+        profe.enthusiasm = $("input[name=enthusiasm]:checked").val();
+        profe.communication = $("input[name=communication]:checked").val();
+        profe.usesBook = $("input[name=book]:checked").val();
     });
     
-    
+    $("#home").click(function(){
+        
+        window.location.href = "search.html";
+        
+        
+    });
     
     
     

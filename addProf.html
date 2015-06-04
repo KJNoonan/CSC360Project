@@ -2,17 +2,19 @@
 <html>
 
 <head>
-<Title>Add Professor</Title>    
+<Title>TeacherTrackr: Add Professor</Title>    
 <link rel = "stylesheet" type="text/css" href="addProf.css">
 <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
 <script type="text/javascript" src="addProf.js"></script>
 </head>
     
 <div id="container">
-    <h1>Add a Professor</h1>
+    <h1 id="home">TeacherTrackr</h1>
+    <h2>Add a Professor</h2>
 
         <h3>Please Fill in the Form</h3>
             <div id="profInfo">
+            <form>
                 <h5>Professor Information: </h5>
                     <label for="fName">First Name: </label>
                     <input type="text" id = "fName"></input>
@@ -42,34 +44,79 @@
             <br>
             <br>
             <div id = "rating"
-                 <h4>What's Your Rating of this Professor?: </h4>
+                 <h3 id="ratTitle">What's Your Rating of this Professor?: </h3>
             <br>
                 <label for="overall">Overall: </label>
-                <div class="stars" id="overall: ">
-                    <span>&#x2606</span><span>&#x2606</span><span>&#x2606</span><span>&#x2606</span><span>&#x2606</span>
-                </div>
+                    <fieldset id="overall">
+                        <span>Worst</span>
+                        <input type="radio" value="1" name="overall">
+                        <input type="radio" value="2" name="overall">
+                        <input type="radio" value="3" name="overall">
+                        <input type="radio" value="4" name="overall">
+                        <input type="radio" value="5" name="overall">
+                        <span>Best</span>
+
+                    </fieldset>
+                
                 <label for="easiness">Easiness: </label>
-                <div class="stars" id="easiness">
-                    <span>&#x2606</span><span>&#x2606</span><span>&#x2606</span><span>&#x2606</span><span>&#x2606</span>
-                </div>
+                    <fieldset id="easiness">
+                        <span>Hardest</span>
+                        <input type="radio" value="1" name="easiness">
+                        <input type="radio" value="2" name="easiness">
+                        <input type="radio" value="3" name="easiness">
+                        <input type="radio" value="4" name="easiness">
+                        <input type="radio" value="5" name="easiness">
+                        <span>Easiest</span>
+
+                    </fieldset>
+               
                  <label for="timeliness">Timeliness: </label>
-                <div class="stars" id="timeliness">
-                    <span>&#x2606</span><span>&#x2606</span><span>&#x2606</span><span>&#x2606</span><span>&#x2606</span>
-                </div>
+                        <fieldset id="timeliness">
+                        <span>Always Slow</span>
+                        <input type="radio" value="1" name="timeliness">
+                        <input type="radio" value="2" name="timeliness">
+                        <input type="radio" value="3" name="timeliness">
+                        <input type="radio" value="4" name="timeliness">
+                        <input type="radio" value="5" name="timeliness">
+                        <span>Always Quick</span>
+
+                    </fieldset>
+                
                 <label for="enthusiasm">Enthusiasm: </label>
-                <div class="stars" id="enthusiasm">
-                    <span>&#x2606</span><span>&#x2606</span><span>&#x2606</span><span>&#x2606</span><span>&#x2606</span>
-                </div>
+                        <fieldset id="enthusiasm">
+                        <span>No Enthusiasm</span>
+                        <input type="radio" value="1" name="enthusiasm">
+                        <input type="radio" value="2" name="enthusiasm">
+                        <input type="radio" value="3" name="enthusiasm">
+                        <input type="radio" value="4" name="enthusiasm">
+                        <input type="radio" value="5" name="enthusiasm">
+                        <span>Extremely Enthusiastic</span>
+
+                    </fieldset>
+                
                  <label for="communication">Communication: </label>
-                <div class="stars" id="communication">
-                    <span>&#x2606</span><span>&#x2606</span><span>&#x2606</span><span>&#x2606</span><span>&#x2606</span>
-                </div>
+
+                        <fieldset id="communication">
+                        <span>Worst</span>
+                        <input type="radio" value="1" name="communication">
+                        <input type="radio" value="2" name="communication">
+                        <input type="radio" value="3" name="communication">
+                        <input type="radio" value="4" name="communication">
+                        <input type="radio" value="5" name="communication">
+                        <span>Best</span>
+
+                    </fieldset
                 <label for="checkbox"> Does the Professor Use the Book?: </label>
-                <input type="checkbox" id="useBook">Yes</input>
-        <br>
-        <br>
-        <br>
+                <fieldset id="book">
+                <input type="radio" value="Yes"name="book">Yes</input>
+                <input type="radio" value="No"name="book">No</input>
+                
+                </fieldset>
+        
+                <div id="cArea">
                 <textarea id="comment">Enter a comment here: (optional)</textarea>
+                </div>
+        </form>
                 <button id="submitP">Submit Professor</button>
             </div>
 
