@@ -2,6 +2,7 @@
     
     width: 300px;
     
+    
 }
 .stars {
   unicode-bidi: bidi-override;
@@ -16,7 +17,7 @@ text-align: left;
 
 .stars > span:hover:before,
 .stars > span:hover ~ span:before {
-   content: "&#x2605";
+   content: "/x2605";
    position: absolute;
 }
 
