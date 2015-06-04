@@ -7,13 +7,14 @@ $(function() {
 		var name, profs, i;
 		name = $("#teacher").val();
 		school = $('#school').val();
-		if(name === null){
+		if(name != null){
 			profs = profModel.find({name: name.toString()});
-		}else{
+		}
+		
+		if(school != null){
 			profs = profModel.find({school: school.toString()});
 		}
 
-		//$("#result").html(profs[0].name);
 		var table = $("#result").append("<table></table>");
 		var headers = table.append("<tr></tr>");
 		headers.append("<th>Name</th>");
@@ -30,9 +31,6 @@ $(function() {
 				data.append("<td>"+prof.overall+"</td>");
 			}
 		}
-		$("#teacher").empty();
-		$("#school").empty();
-
 		return false;
 	});
 });
