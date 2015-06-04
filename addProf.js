@@ -1,7 +1,7 @@
 
 
 $(function(){
-    profe ={
+    addedProf ={
 		name:"Peter Pickles",
 		overall:5,
 		ease:5,
@@ -18,15 +18,29 @@ $(function(){
         var first = $("#fName").val();
         var last = $("#lName").val();
         var nam = first+" "+last;
-        profe.name = nam;
+        addedProf.name = nam;
         var uni = $("#university").val();
-        profe.school = uni;
+        addedProf.school = uni;
         var dept = $("#dept").val();
-        profe.department = dept;
-        profe.comments = $("comment").val();
+        addedProf.department = dept;
+        addedProf.comments = $("#comment").val();
+        addedProf.overall = $("input[name=overall]:checked").val();
+        addedProf.ease = $("input[name=easiness]:checked").val();
+        addedProf.responseTime = $("input[name=timeliness]:checked").val();
+        addedProf.enthusiasm = $("input[name=enthusiasm]:checked").val();
+        addedProf.communication = $("input[name=communication]:checked").val();
+        addedProf.usesBook = $("input[name=book]:checked").val();
+        localStorage.setItem("addedProf",(JSON.stringify(addedProf)));
+        console.log(localStorage.getItem("addedProf"));
+        window.location.href = "addedConf.html";
     });
     
-    
+    $("#home").click(function(){
+        
+        window.location.href = "search.html";
+        
+        
+    });
     
     
     
