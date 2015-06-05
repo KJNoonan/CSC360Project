@@ -1,0 +1,105 @@
+<!doctype html>
+<!--Sean Dirr - Calorie Calculator-->
+<html>
+<head>
+<title>Rate your Teacher</title>
+<script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+<script src="Comment Adder.js"></script>
+<!--link rel="stylesheet" type="text/css" href="Calorie Head.css"-->
+</head>
+<body>
+<h1 id="tName">Test Testerson</h1>
+<h2 id="tSchool">Test University</h2>
+<h2 id="tSubject">Biochem</h2>
+<h2 id="tBookUse">Uses Book</h2>
+<h2 id="tRating">No rating yet.</h2>
+
+<div id = "rating">
+    <h3 id="ratTitle">What's Your Rating of this Professor?: </h3>
+        <br>
+            <label for="overall">Overall: </label>
+                <fieldset id="overall">
+                    <span>Worst</span>
+                    <input type="radio" value="1" name="overall">
+                    <input type="radio" value="2" name="overall">
+                    <input type="radio" value="3" name="overall">
+                    <input type="radio" value="4" name="overall">
+                    <input type="radio" value="5" name="overall">
+                    <span>Best</span>
+
+                </fieldset>
+               
+            <label for="easiness">Easiness: </label>
+                <fieldset id="easiness">
+                    <span>Hardest</span>
+                    <input type="radio" value="1" name="easiness">
+                    <input type="radio" value="2" name="easiness">
+                    <input type="radio" value="3" name="easiness">
+                    <input type="radio" value="4" name="easiness">
+                    <input type="radio" value="5" name="easiness">
+                    <span>Easiest</span>
+
+                </fieldset>
+               
+            <label for="timeliness">Timeliness: </label>
+                    <fieldset id="timeliness">
+                    <span>Always Slow</span>
+                    <input type="radio" value="1" name="timeliness">
+                    <input type="radio" value="2" name="timeliness">
+                    <input type="radio" value="3" name="timeliness">
+                    <input type="radio" value="4" name="timeliness">
+                    <input type="radio" value="5" name="timeliness">
+                    <span>Always Quick</span>
+
+                </fieldset>
+                
+            <label for="enthusiasm">Enthusiasm: </label>
+                    <fieldset id="enthusiasm">
+                    <span>No Enthusiasm</span>
+                    <input type="radio" value="1" name="enthusiasm">
+                    <input type="radio" value="2" name="enthusiasm">
+                    <input type="radio" value="3" name="enthusiasm">
+                    <input type="radio" value="4" name="enthusiasm">
+                    <input type="radio" value="5" name="enthusiasm">
+                    <span>Extremely Enthusiastic</span>
+                </fieldset>
+                
+             <label for="communication">Communication: </label>
+                    <fieldset id="communication">
+                    <span>Worst</span>
+                    <input type="radio" value="1" name="communication">
+                    <input type="radio" value="2" name="communication">
+                    <input type="radio" value="3" name="communication">
+                    <input type="radio" value="4" name="communication">
+                    <input type="radio" value="5" name="communication">
+                    <span>Best</span>
+
+                </fieldset
+            <label for="checkbox"> Does the Professor Use the Book?: </label>
+                <fieldset id="book">
+                <input type="radio" value="Yes"name="book">Yes</input>
+                <input type="radio" value="No"name="book">No</input>
+                
+                </fieldset>
+</div>
+				
+<p>
+<!--Who doesn't like burgers with 50,000 patties on them?-->
+<input type="button" id="raterbutt" value="Submit Rating"/>
+</p>
+
+<p>
+<!--Who doesn't like burgers with 50,000 patties on them?-->
+<label for="comBox">Comment on this teacher.</label> <br>
+<textarea id="comBox" contenteditable size="7" style="width: 400px; height: 160px;"></textarea>
+</p>
+
+<p>
+<input type="button" id="submit" value="Submit your Review"/>
+</p>
+<!--Button above calculates, button below resets the message field-->
+
+<div id="commentSection"></div>
+
+</body>
+</html>
