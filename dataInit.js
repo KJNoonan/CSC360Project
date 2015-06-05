@@ -56,6 +56,12 @@ var init = function(){
 
 	profModel = new Model('prof');
 	profModel.delete_all();
+   var added = localStorage.getItem("addedProf");
+    
+   var pinfo = (JSON.parse(added));
+    profObj = profModel.create(pinfo);
+    profObj.create(pinfo);
+    profObj.save();
 	for(i=0; i<objList.length; i++){
 		profObj = profModel.create(objList[i]);
 		profObj.save();

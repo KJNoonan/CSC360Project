@@ -1,6 +1,11 @@
 
 
 $(function(){
+    
+    
+
+    
+    
     addedProf ={
 		name:"Peter Pickles",
 		overall:5,
@@ -31,6 +36,9 @@ $(function(){
         addedProf.communication = $("input[name=communication]:checked").val();
         addedProf.usesBook = $("input[name=book]:checked").val();
         localStorage.setItem("addedProf",(JSON.stringify(addedProf)));
+        
+        
+        
         console.log(localStorage.getItem("addedProf"));
         window.location.href = "addedConf.html";
     });
